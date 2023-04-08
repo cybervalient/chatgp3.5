@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ChatGPT 3.5</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <main>
+    <main class=main>
         <h1>ChatGPT</h1>
         <form action="">
             <input type="text" name="message" id="message">
             <button type="submit">Send</button>
             </form>
-            <div id="chat-log">
+            <div id="chat-log" CLASS=main>
 
             </div>
           
@@ -31,7 +31,7 @@
         const messageElement = document.createElement('div');
         messageElement.classList.add('message');
         messageElement.classList.add('message--sent');
-        messageElement.innerHTML = `<div class="message__text">${messageText}</div>`;
+        messageElement.innerHTML = `<div class="message__text">User: ${messageText}</div>`;
         chatlog.appendChild(messageElement);
         chatlog.scrollTop = chatlog.scrollHeight;
         fetch('http://localhost:5000/datos', {
@@ -48,7 +48,7 @@
         const messageElement = document.createElement('div');
         messageElement.classList.add('message');
         messageElement.classList.add('message--sent');
-        messageElement.innerHTML = `<div class="message__text">${data.content}</div>`;
+        messageElement.innerHTML = `<div class="message__text">Assistant: ${data.content}</div>`;
         chatlog.appendChild(messageElement);
         chatlog.scrollTop = chatlog.scrollHeight;
         })
