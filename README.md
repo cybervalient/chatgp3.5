@@ -1,4 +1,4 @@
-# OpenAI API Quickstart - Node.js example app
+# OpenAI API  - Node.js example ChatGPT
 
 This is an example chat app used in the OpenAI API [quickstart tutorial](https://platform.openai.com/docs/quickstart). It uses the [node js](https://nodejs.org/en/) framework with [express js](https://expressjs.com/). Check out the tutorial or follow the instructions below to get set up.
 
