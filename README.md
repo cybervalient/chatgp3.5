@@ -1,6 +1,6 @@
 # OpenAI API Quickstart - Node.js example app
 
-This is an example chat app used in the OpenAI API [quickstart tutorial](https://platform.openai.com/docs/quickstart). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Check out the tutorial or follow the instructions below to get set up.
+This is an example chat app used in the OpenAI API [quickstart tutorial](https://platform.openai.com/docs/quickstart). It uses the [node js](https://nodejs.org/en/) framework with [express js](https://expressjs.com/). Check out the tutorial or follow the instructions below to get set up.
 
 ## Setup
 
@@ -24,10 +24,10 @@ This is an example chat app used in the OpenAI API [quickstart tutorial](https:/
    ```
 5. Add your [API key](https://platform.openai.com/account/api-keys) to the newly created index.js file into apiKey:
 
-# const configuration = new Configuration({
-#    organization: "",
-#    apiKey: "",
-# });
+ const configuration = new Configuration({
+  organization: "",
+ apiKey: "",
+ });
 
 6. Run the app
 

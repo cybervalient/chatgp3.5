@@ -2,9 +2,7 @@ import { Configuration, OpenAIApi } from "openai";
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-//const express = require('express');
-//const bodyParser = require('body-parser');
-//const cors = require('cors');
+
 
 const configuration = new Configuration({
     organization: "",
